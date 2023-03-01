@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>é isso ai 3</title>
+
+        <script>
+            $ (function(){
+                let senha = 1;
+                let s = $('#s').val();
+
+                $ ('#b').on('click', function(){
+                    if (s = senha) {
+                       $ (window.location.href = './éIssoAiresposta3.html');
+                    } //else {
+                        //alert('Senha errada amigão!');
+                    //}
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <h1>Olá Querido, por favor digite sua senha, se vc acertar parabéns</h1>
+
+        <label>Digite sua senha</label>
+        <input type="text" id="s">
+
+        <button id="b">enviar</button>
+    </body>
+</html>

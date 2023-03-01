@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>é isso ai 4</title>
+
+        <script>
+            $(function(){
+                    let campo = $ ('#campo').val();
+                    
+                    $('#b').on('click', function() {
+                    $("ul").append('<li>',$('#campo'),'</li>');
+                    });
+            })
+            
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Aqui jaz uma lista faça oque quiser!</h1>
+        <label>Digite aqui oque vai ser adicionado á lista:</label>
+        <input type="text" id="campo">
+
+        <button id="b">envie para lista</button>
+        <ul>
+            
+        </ul>
+
+    </body>
+</html>

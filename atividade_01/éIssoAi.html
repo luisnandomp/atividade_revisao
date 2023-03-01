@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>É isso ai</title>
+
+        <script>
+            $ (function() {
+                $("#2").on("click", function(){
+                    let campo = $ ('#1').val();
+                    alert ('aqui está oque você escreveu! ' + campo);
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <h1>Bom dia meu caro usuário do meu belo site!</h1>
+
+        <h3>Aqui vai haver um campo vazio e um botão, ao cliclar no botão apareça um alerta com o conteudo digitado no campo :D</h3>
+        <label>Aqui jaz o campo</label>
+        <input type="text" id="1">
+        <button id="2">Aqui jaz o botão</button>
+
+
+    </body>
+</html>
+
