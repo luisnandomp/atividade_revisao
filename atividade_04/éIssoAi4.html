@@ -9,23 +9,32 @@
 
         <script>
             $(function(){
-                    let campo = $ ('#campo').val();
-                    $('#b').on('click', function() {
-                    $('ul').append('<li>',$('#campo'),'</li>');
-                    });  
+                
+
+                $('#b').on('click', function() {
+                    let campo = $('#campo').val();
+
+                    $('ul').append('<li> <input type="radio"> ' + campo + ' <a href="" class="apaga">x</a></li>');
                 });
+            });
             
-            
+
+            $('.apaga').on('click', function(){
+                $(this).parent().remove();
+            })
         </script>
     </head>
     <body>
         <h1 align="center">Aqui jaz uma lista faça oque quiser!</h1>
-        <label>Digite aqui oque vai ser adicionado á lista:</label>
-        <input type="text" id="campo">
 
-        <button id="b">envie para lista</button>
+        <div>
+            <label>Digite aqui oque vai ser adicionado á lista:</label>
+            <input type="text" id="campo">
+            <button id="b">envie para lista</button>
+        </div>
+
         <ul>
-            
+
         </ul>
 
     </body>
