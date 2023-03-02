@@ -9,15 +9,15 @@
 
         <script>
             $ (function(){
-                let senha = 1;
-                let s = $('#s').val();
-
                 $ ('#b').on('click', function(){
-                    if (s = senha) {
-                       $ (window.location.href = './éIssoAiresposta3.html');
-                    } //else {
-                        //alert('Senha errada amigão!');
-                    //}
+                let senha = 'a';
+                let s = $('#s').val();
+                    if (s !== senha) {
+                       alert('Senha errada amigão!');
+                    } 
+                    else{
+                        $ (window.location.href = './éIssoAiresposta3.html');
+                    }
                 })
             })
         </script>
