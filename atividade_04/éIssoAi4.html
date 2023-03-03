@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
         <title>é isso ai 4</title>
 
         <script>
@@ -14,26 +16,31 @@
                 $('#b').on('click', function() {
                     let campo = $('#campo').val();
 
-                    $('ul').append('<li> <input type="radio"> ' + campo + ' <a href="" class="apaga">x</a></li>');
+                    $('ul').append('<li>' + campo + ' <a href="#" class="apaga">x</a></li>');
+                });
+                
+                $('#lista').on('click', '.apaga', function(){
+                    $(this).parent().remove();
                 });
             });
             
 
-            $('.apaga').on('click', function(){
-                $(this).parent().remove();
-            })
+
         </script>
     </head>
     <body>
-        <h1 align="center">Aqui jaz uma lista faça oque quiser!</h1>
+        <div class="espaco"></div>
+        <div id="caixa">
+            <h1>Aqui jaz uma lista faça oque quiser!</h1> <br>
 
-        <div>
-            <label>Digite aqui oque vai ser adicionado á listaa:</label>
-            <input type="text" id="campo">
+        <div class="bloco">
+            <label>Digite aqui oque vai ser adicionado á lista:</label>
+            <input type="text" id="campo"> <br>
             <button id="b">envie para lista</button>
         </div>
+        </div>
 
-        <ul>
+        <ul id="lista">
 
         </ul>
 
